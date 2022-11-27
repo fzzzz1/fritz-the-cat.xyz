@@ -1,0 +1,64 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2"
+        href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/"
+        role="button">Start Here</a>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/fzzzz1/fritz-the-cat.xyz">GitHub</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+{{ if eq $.Site.Language.LanguageName "English" }}
+<section class="section section-sm">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <p class="fs-4 mt-4">📚</p>
+        <h2 class="h4">Personal Knowledge Base</h2>
+        <p> A place where to store all of my notes, tagged and categorized</p>
+        <p>A well organized collection of tutorials, guides and cheatsheets</p>
+      </div>
+      <div class="col-lg-5">
+        <p class="fs-4 mt-4"><a href="https://f-zociety.org">🌱</a></p>
+        <h2 class="h4">Life</h2>
+        <p> Here you will get a chance to dive the depths of my troubled soul.</p>
+      </div>
+      <div class="col-lg-5">
+        <p class="fs-4 mt-4">🗒️</p>
+        <h2 class="h4">Blog</h2>
+        <p> A place to keep you all up to date with current projects. I pledge to write two monthly updates.</p>
+        <p> <i> * I will keep the number of <b>fun facts</b> to the essential minimum.</i> </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-open-collective mt-3 bg-light">
+  <div class="container">
+    <h2 class="h3 mt-0 text-center">☕ Want to buy me a coffe?</h2>
+    <p class="text-center">Help support a nerd by becoming a financial contributor.</p>
+    <p class="text-center mb-0 mt-4"><a class="btn btn-primary px-4 mb-2" href="/blog/" role="button">Contribute</a><a
+        class="btn btn-outline-primary px-4 ms-2 mb-2" href="https://f-zociety.org" role="button">Learn More</a></p>
+  </div>
+</section>
+
+{{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}
