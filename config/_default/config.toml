@@ -1,4 +1,5 @@
-baseurl = "https://fritz-the-cat.xyz"
+# baseurl = "https://fritz-the-cat.xyz"
+baseurl = "/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
