@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://fritz-the-cat.xyz"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
