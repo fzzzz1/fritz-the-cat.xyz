@@ -1,14 +1,14 @@
 [[docs]]
-  name = "Prologue"
+  name = "InfoSec"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "infosec"
+  url = "/docs/infosec/"
 
 [[docs]]
-  name = "Help"
+  name = "Resources"
   weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "resources"
+  url = "/docs/resources/"
 
 # [[docs]]
 #   name = "Lorem"
@@ -29,8 +29,8 @@
   url = "/tutorial/lorem/"
 
 [[main]]
-  name = "Personal Knowledge"
-  url = "/docs/"
+  name = "Knowledge"
+  url = "/knowledge/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -48,20 +48,20 @@
   name = "About Me"
   weight = 30
   identifier = "about-me"
-  url = "/docs/prologue/introduction/"
+  url = "/about/"
 
 [[main]]
   name = "Resume"
   weight = 40
   identifier = "resume"
-  url = "https://f-zociety.org"
+  url = "https://linkedin.com/in/firezer-zanasi"
   parent = "about-me"
 
 [[main]]
   name = "Contact Me"
   weight = 50
   identifier = "contact-me"
-  url = "https://f-zociety.org"
+  url = "/about/"
   parent = "about-me"
 
 [[social]]
