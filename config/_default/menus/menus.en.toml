@@ -8,7 +8,7 @@
   name = "Resources"
   weight = 60
   identifier = "resources"
-  url = "/docs/resources/"
+  url = "/docs/sources/"
 
 # [[docs]]
 #   name = "Lorem"
@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Knowledge"
-  url = "/knowledge/"
+  url = "/docs/infosec/commands/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
